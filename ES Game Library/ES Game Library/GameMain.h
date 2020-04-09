@@ -2,6 +2,7 @@
 
 #include "ESGLib.h"
 #include "GameScene/GameScene.hpp"
+#include <fbxsdk.h>
 
 class GameMain : public CGameScene {
 public:

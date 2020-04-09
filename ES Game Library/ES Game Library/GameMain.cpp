@@ -12,7 +12,15 @@ bool GameMain::Initialize()
 	// TODO: Add your initialization logic here
 	WindowTitle(_T("ES Game Library"));
 
-	int a = 0;
+	FbxManager* fbxManager = FbxManager::Create();
+
+	fbxManager->Destroy();
+
+	if (fbxManager == nullptr)
+	{
+		// ì¬¸”s
+		return 0;
+	}
 
 	return true;
 }
